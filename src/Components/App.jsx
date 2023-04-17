@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
 import Feed from "./Feed";
 import FriendList from "./FriendList";
+import { User, UserAbout } from "./User";
 
 function App() {
   return (
@@ -12,8 +12,9 @@ function App() {
           <Navbar />
         </div>
         <div className="content-container">
-          <div className="sidebar">
-            <Sidebar />
+          <div className="user">
+            <User />
+            <UserAbout />
           </div>
           <div className="feed">
             <Feed />

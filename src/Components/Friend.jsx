@@ -6,11 +6,15 @@ function Friend(props) {
   return (
     <>
       <div className="friend">
-        <h4>{props.name}:</h4>
-        <p>{props.headline}</p>
-        <hr />
-        <button>Add Friend</button>
+        <div className="friend-name">
+          <h4>{props.name}:</h4>
+        </div>
+        <div className="friend-button">
+          <p>{props.headline}</p>
+          <button>Add Friend</button>
+        </div>
       </div>
+      <hr />
     </>
   );
 }

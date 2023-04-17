@@ -21,7 +21,6 @@ html {
 }
 
 .content-container {
-  margin-left: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -29,37 +28,56 @@ html {
 
 .nav-container {
   flex: 1 0 var(--gutter);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.sidebar,
-.feed,
-.friend-list {
-  border-radius: 10px;
-  padding: 40px;
-  margin: 10px;
-  flex: 1 0 auto;
-  border: white solid 1px;
-  justify-content: space-around;
-}
-
+.searchbar,
 .navbar-buttons {
   display: flex;
 }
 
-.searchbar {
-  display: flex;
+.user {
+  /* background: linear-gradient(blue, white); */
+  flex: 1 0 20vw;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
 }
 
-.tweet-feed {
+.user > * {
+  border: white solid 1px;
+  padding: 40px;
+
+  
 }
 
-.friend-img {
-  width: 4em;
-  height: 6em;
+.feed,
+.friend-list {
+  border-radius: 10px;
+  padding: 40px;
+  /* margin: 10px; */
+  flex: 1 0 20vw;
+  border: white solid 1px;
+  justify-content: space-around;
+}
+
+.friend button {
+  font-size: .7em;
 }
 
 .friend {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2em;
+}
+
+.friend-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 button {
