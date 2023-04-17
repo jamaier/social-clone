@@ -1,17 +1,23 @@
 import React from "react";
-import './../App.css'
+import PropTypes from "prop-types";
+import "./../App.css";
 
-function Friend() {
-    return (
-      <>
-        <div className='friend'>
-          {/* <img src={friendAvatar} alt="this is a friend image" /> */}
-          <div className='friend-img'>this is a person</div>
-          <p>my-name</p>
-          <button>please like me</button>
-        </div>
-      </>
-    );
-  }
-  
-  export default Friend;
+function Friend(props) {
+  return (
+    <>
+      <div className="friend">
+        <h4>{props.name}:</h4>
+        <p>{props.headline}</p>
+        <hr />
+        <button>Add Friend</button>
+      </div>
+    </>
+  );
+}
+
+Friend.propTypes = {
+  name: PropTypes.string,
+  headline: PropTypes.string,
+};
+
+export default Friend;

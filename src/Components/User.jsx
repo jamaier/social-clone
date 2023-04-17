@@ -10,7 +10,7 @@ function User() {
         <h6>userAbout</h6>
       </div>
     </>
-  )
+  );
 }
 
 export default User;

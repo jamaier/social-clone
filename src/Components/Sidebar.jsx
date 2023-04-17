@@ -1,6 +1,6 @@
 import React from "react";
-import './../App.css'
-import User from "./User"
+import "./../App.css";
+import User from "./User";
 
 function Sidebar() {
   return (
