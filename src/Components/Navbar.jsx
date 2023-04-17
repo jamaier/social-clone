@@ -2,7 +2,13 @@ import React from "react";
 
 function Navbar() {
   return (
-    <h1>header this header</h1>
+    <React.Fragment>
+      <button>Home</button>
+      <button>Notifications</button>
+      <button>Messages</button>
+      <input type="text" name="search" id="search-bar" />
+      <button>Tweet</button>
+    </React.Fragment>
   );
 }
 
