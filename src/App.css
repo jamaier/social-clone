@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.friend-img {
+  width: 4em;
+  height: 6em;
+  border: 1px salmon solid;
+}
+
+.friend {
+  display: flex;
+}
