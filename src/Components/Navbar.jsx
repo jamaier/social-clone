@@ -2,14 +2,16 @@ import React from "react";
 
 function Navbar() {
   return (
-    <React.Fragment>
-      <button>Home</button>
-      <button>Notifications</button>
-      <button>Messages</button>
-      <input type="text" name="search" id="search-bar" />
-      <button>Tweet</button>
-    </React.Fragment>
+    <>
+      <div className='navbar'>
+        <button>Home</button>
+        <button>Notifications</button>
+        <button>Messages</button>
+        <input type="text" name="search" id="search-bar" />
+        <button>Tweet</button>
+      </div>
+    </>
   );
 }
 
-export default Navbar
+export default Navbar;
